@@ -23,3 +23,7 @@ Things you may want to cover:
 
 * ...
 # bbb
+
+### bxSliderの導入
+
+[参考サイト](https://bxslider.com/install/)

@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Aaa</title>
+    <title>sample | bxSlider</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+      $(function(){
+        $('.bxslider').bxSlider({
+          mode: 'fade', //「horizontal」 横方向のスライド,「vertical」 縦方向のスライド,「fade」 フェードでの切り替え。
+          auto: 'true', // 自動スライドの設定
+          captions: true, //画像にキャプションを表示する事ができます。タグのtitleプロパティ内に記述したものが表示されます。
+          slideWidth: 600 //各スライドの幅を指定。
+        });
+      });
+    </script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -13,3 +25,4 @@
     <%= yield %>
   </body>
 </html>
+
